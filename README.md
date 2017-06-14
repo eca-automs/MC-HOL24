@@ -1,30 +1,35 @@
-# Nome schema
+# MC-HOL24
 ![electric_panel_icon](res/el_icon_4.jpg)
 ## Schema per quadro elettrico per ascensore
 
 ### Scheda controllo
-MCPX2015-SMD - PER16B-SMD
+MCPX2015-SMD
 
 ### Tipo impianto
-Fune
+Oleodinamico.
 
 ### Manovra
-Tipo di manovra
+Home lift, uomo presente - chiamata ad impulso.
 
 ### Operatore porte
-Tipo di operatore porte
+Manuale.
 
 ### Avviamento / controllo motore
-Tipo di avviamento (VVVF, soft starter con specifiche modelli e marche).
+Diretto.
 
 ### Potenza massima motore / taglie compatibili
-Inserire kw motore e specifiche varie legate alla potenza e/o l'elenco di taglie dei quadri compatibili con questo schema.
+
+Taglia|Potenza
+---|---
+S10|3CV-230VAC/5CV-400VAC
+S20|8CV-230VAC/15CV-400VAC
+S30|10CV-230VAC/17CV-400VAC
 
 ### Allarme
-Tipo di allarme
+12VDC.
 
 ### Emergenza
-Tipo di emergenza
+Totale con gruppo batterie 24VDC.
 
 ### Emendamento A3
-Tipo di emendamento a3
+Nessuno.
