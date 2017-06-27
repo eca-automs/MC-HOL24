@@ -1,0 +1,15 @@
+{
+  "name": "mc-hol24",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:eca-automs/schematics/MC-HOL24.git",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s"
+  },
+  "author": "",
+  "license": "GPL-3.0"
+}
