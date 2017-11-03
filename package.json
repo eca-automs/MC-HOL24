@@ -3,13 +3,18 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "version": "npm run changelog && git add -A",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:eca-automs/schematics/MC-HOL24.git",
-    "changelog": "conventional-changelog -i CHANGELOG.md -s"
+    "url": "git@gitlab.com:eca-automs/schematics/MC-HOL24.git"
   },
   "author": "",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "conventional-changelog-cli": "^1.3.4"
+  }
 }
