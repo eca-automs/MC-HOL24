@@ -2,9 +2,9 @@
 2 - 4                  ALT E BOTTONIERA MANUTENZIONE
 4 - 5                  INTER FOSSA
 5 - 6                  ALT CABINA
-6 - 6A                 PARACADUTE
-6A - 7                 CONTATTO FOTOCELLULA
-7 - 8                  PRELIMINARI
+6 - 7                  PARACADUTE
+7 - 6A                 CONTATTO FOTOCELLULA
+6A - 8                 PRELIMINARI
 8 - 9                  PORTE CABINA(SIA IN BATTENTE CHE IN AUTOMATICO)
 9 - 10                 BLOCCHI
 MA - MB - GND          DEVIATORE MANUTENZIONE
