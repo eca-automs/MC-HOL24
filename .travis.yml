@@ -1,0 +1,48 @@
+language: node_js
+node_js:
+- '8.9'
+
+# before_script:
+# - sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++ calibre xvfb jpegoptim optipng -y
+# - npm install -g gitbook-cli gulp-cli
+# - gitbook fetch 3.2.3
+# - export DISPLAY=:99.0
+# - sh -e /etc/init.d/xvfb start
+# - sleep 3
+
+script:
+- npm run build
+
+branches:
+  only:
+    - master
+    - /^v[0-9]+\.[0-9]+\.[0-9]+-(alpha|beta|rc)\.[0-9]+$/
+    - /^v[0-9]+\.[0-9]+\.[0-9]+$/
+
+deploy:
+  - provider: s3
+    skip_cleanup: true
+    upload-dir: MC-HOL24
+    local_dir: ecadoc
+    bucket: "$PRODUCTION_BUCKET"
+    region: "$AWS_REGION"
+    acl: private
+    on:
+      tags: true
+      condition: $TRAVIS_TAG =~ ^v[0-9]+\.[0-9]+\.[0-9]+$
+  - provider: s3
+    skip_cleanup: true
+    upload-dir: MC-HOL24
+    local_dir: ecadoc
+    bucket: "$TESTING_BUCKET"
+    region: "$AWS_REGION"
+    acl: private
+    on:
+      tags: true
+      condition: $TRAVIS_TAG =~ ^v[0-9]+\.[0-9]+\.[0-9]+-(alpha|beta|rc)\.[0-9]+$
+
+notifications:
+  # webhooks:
+  #   urls:
+  #     - secure: "encrypted webhook url here"
+  #   on_start: always
