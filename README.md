@@ -1,6 +1,15 @@
 # MC-HOL24
-![electric_panel_icon](res/el_icon_4.jpg)
-## Schema per quadro elettrico per ascensore
+Schema quadro elettrico per homelift oleodinamico.
+
+## Licenza
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+
+Fatta eccezione del logo
+
+![logo](./assets/images/eca-logo.png)
+
+e del nome `Eca di Belardi Roberto`.
 
 ### Scheda controllo
 MCPX2015-SMD
@@ -10,6 +19,8 @@ Oleodinamico.
 
 ### Manovra
 Home lift, uomo presente - chiamata ad impulso.
+
+Tensione 24VDC.
 
 ### Operatore porte
 Manuale.
@@ -32,4 +43,4 @@ S30|10CV-230VAC/17CV-400VAC
 Totale con gruppo batterie 24VDC.
 
 ### Emendamento A3
-Nessuno.
+Non gestito.
